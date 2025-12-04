@@ -1,0 +1,91 @@
+---
+title: "My Portfolio Projects"
+date: 2025-12-03
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <style>
+      /* --- 1. CSS STYLING FOR THE GRID --- */
+      .gallery-grid {
+        display: grid;
+        /* Creates a responsive grid: minimum card width is 280px */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 20px 0;
+      }
+      .project-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-decoration: none; /* Removes underline from link */
+        color: inherit;
+        transition: transform 0.2s, box-shadow 0.2s;
+        background: #fff;
+        display: block;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      .thumb-img {
+        width: 100%;
+        height: 200px;
+        /* Ensures images are cropped nicely to fill the box */
+        object-fit: cover; 
+        border-bottom: 1px solid #eee;
+      }
+      .card-text {
+        padding: 15px;
+      }
+      .card-title {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .card-desc {
+        font-size: 0.9rem;
+        color: #666;
+      }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Technical Writing Portfolio</h1>
+        <p>Check out my latest projects and documentation samples below. Click any card to view the full report and description.</p>
+    </header>
+
+    <div class="gallery-grid">
+
+        <a href="/projects/smart-watch/" class="project-card" target="_blank">
+            <img src="/images/watchreport.png" alt="Smart Watch Report Thumbnail" class="thumb-img">
+            <div class="card-text">
+                <h3 class="card-title">Smart Watch Technical Report</h3>
+                <p class="card-desc">A detailed analysis of wearable device battery life and efficiency standards.</p>
+            </div>
+        </a>
+
+        <a href="/projects/project-two/" class="project-card" target="_blank">
+            <img src="/images/project2.png" alt="API Documentation Thumbnail" class="thumb-img">
+            <div class="card-text">
+                <h3 class="card-title">API Documentation Project</h3>
+                <p class="card-desc">Standardizing REST API endpoints and creating user-friendly reference guides.</p>
+            </div>
+        </a>
+
+        <a href="/projects/project-three/" class="project-card" target="_blank">
+            <img src="/images/project3.png" alt="Renewable Energy White Paper Thumbnail" class="thumb-img">
+            <div class="card-text">
+                <h3 class="card-title">Renewable Energy White Paper</h3>
+                <p class="card-desc">Research paper covering current trends and future outlook for solar energy adoption.</p>
+            </div>
+        </a>
+
+        </div>
+
+    </body>
+</html>
