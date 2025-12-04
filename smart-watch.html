@@ -1,0 +1,72 @@
+---
+title: "Smart Watch Technical Report"
+date: 2025-12-03
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    
+    <style>
+        /* Simple styling for the project page for readability */
+        .project-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .header-section {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .description-box {
+            background-color: #f9f9f9;
+            border-left: 5px solid #d1740a;
+            padding: 20px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .pdf-section h2 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .pdf-frame {
+            width: 100%;
+            border: 1px solid #000000;
+            border-radius: 4px;
+        }
+        /* Mobile adjustment for smaller screens */
+        @media (max-width: 600px) {
+            .description-box {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="project-container">
+
+        <header class="header-section">
+            <h1>Smart Watch Technical Report</h1>
+            <p>Published: 2025-12-03</p>
+            <a href="/projects/" style="color: #e05b3a; text-decoration: none;">&larr; Back to Portfolio</a>
+        </header>
+
+        <section class="description-box">
+            <h2>Project Overview</h2>
+            <p>
+                This project involved a comprehensive technical analysis of battery performance and power consumption across a range of commercially available smartwatches. The goal was to establish a set of standardized efficiency metrics for wearable devices. Our findings detail the trade-offs between display refresh rates, sensor activity (e.g., heart rate monitoring, GPS), and overall device longevity. 
+                The primary deliverable was a detailed report proposing design recommendations to extend battery life by up to 35% without significant component changes. This documentation serves as a guide for product managers and engineering teams to prioritize low-power solutions in future development cycles.
+            </p>
+        </section>
+
+        <section class="pdf-section">
+            <h2>View Full Technical Document</h2>
+            <iframe 
+                src="/pdfs/smartwatchreport.pdf" 
+                class="pdf-frame"
+                height="900px" 
